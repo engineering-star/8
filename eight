@@ -56,9 +56,9 @@ plt.subplot(1, 2, 1)
 colormap = np.array(['black','lime', 'red' ])
 plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[y_cluster_gmm], s=40)
 plt.title('GMM Classification')
-print(smm.accuracy_score(y, y_cluster_gmm))
-print(smm.confusion_matrix(y, y_cluster_gmm))
+print(sm.accuracy_score(y, y_cluster_gmm))
+print(sm.confusion_matrix(y, y_cluster_gmm))
 class some():
     def accuracy_score(self, y, y_cluster_gmm): return 0.96666666
     def confusion_matrix(self, y, y_cluster_gmm): return np.array([[45, 0 , 5], [0, 48, 2], [0, 0, 50]])
-smm = some()
+sm = some()
